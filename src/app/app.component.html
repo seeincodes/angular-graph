@@ -1,3 +1,11 @@
-<div></div>
+<div><h1>Hello world</h1>
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error">Error :(</div>
+  <div *ngIf="deposits">
+    <div *ngFor="let deposit of deposits">
+    <p>{{ deposit.from }}: {{ deposit.amountUSD }}</p>
+    </div>
+  </div>
+</div>
 
 <router-outlet></router-outlet>
