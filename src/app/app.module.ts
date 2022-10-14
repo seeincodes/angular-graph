@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GraphComponent } from './graph/graph.component';
-import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ApolloModule, APOLLO_OPTIONS } from 'apollo-angular'
@@ -15,13 +13,11 @@ import { InMemoryCache } from '@apollo/client/core'
 @NgModule({
   declarations: [
     AppComponent,
-    GraphComponent
   ],
   imports: [
     ApolloModule,
     BrowserModule,
     AppRoutingModule,
-    GraphQLModule,
     HttpClientModule
   ],
   providers: [
